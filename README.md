@@ -27,15 +27,6 @@ data_url = converter.to_data_url()
 print(data_url)
 ```
 
-## Usage in Jupyter Notebook
-
-```python
-from image_file_converter.core import ImageFileConverter
-
-# convert pdf to image or data_url
-input_file = 'tests/test.pdf'
-```
-
 ## Usage in CMD
 
 ```bash
@@ -49,6 +40,7 @@ image_file_converter to_image tests/test.pdf -o output.png --dpi 300 --max-page 
 
 # convert image to pdf
 image_file_converter to_pdf tests/test.png -o output.pdf
+image_file_converter to_pdf tests/test.jpg -o output.pdf
 
 # convert image or pdf to data_url
 image_file_converter to_data_url tests/test.png
